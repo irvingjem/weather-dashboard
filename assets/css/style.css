@@ -1,0 +1,60 @@
+:root {
+    --primary: #e2e2e2;
+    --hover: #122a5f;
+    --light-main: #05172e;
+    --main: #496586;
+    --border-radius: 4.8px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--main);
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    margin: 0;
+    color: var(--main);
+    line-height: 1.25;
+}
+
+main {
+    margin: 20px auto;
+    width: 94%;
+}
+
+p {
+    font-size: 16px;
+    margin: 5px 5px;
+}
+
+.day p {
+    font-size: 14.5px;
+}
+
+.btn {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 6px 5px;
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+    border-radius: var(--border-radius);
+    color: var(--primary);
+    border: none;
+    outline: none;
+    background-color: var(--light-main);
+    box-shadow: 3px 3px var(--main);
+    transform: translate(-1px, -1px);
+}
