@@ -1,0 +1,42 @@
+/* Global variables for styling */
+
+:root {
+    --primary: rgb(226, 226, 226);
+    --hover: #0000;
+    --main: #c9611c;
+    --secondary: #c38a64;
+}
+
+
+/* global stlyes */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Styles for body */
+
+body {
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--main);
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+
+/* Htag styles */
+
+h1,
+h2,
+h3 {}
+
+
+/* main styles */
+
+main {
+    margin: 20px auto;
+}
