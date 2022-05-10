@@ -2,9 +2,10 @@
 
 :root {
     --primary: rgb(226, 226, 226);
-    --hover: #0000;
+    --hover: rgba(0, 0, 0, 0.8);
     --main: #c9611c;
     --secondary: #c38a64;
+    --header: #c3c3c3;
 }
 
 
@@ -32,11 +33,144 @@ body {
 
 h1,
 h2,
-h3 {}
+h3 {
+    font-weight: 700;
+    margin: 0;
+    color: var(--main);
+    line-height: 1.25;
+}
 
 
 /* main styles */
 
 main {
     margin: 20px auto;
+    width: 94%;
+}
+
+p {
+    font-size: 16px;
+    margin: 5px 5px;
+}
+
+
+/* button styles */
+
+.btn {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 6px 5px;
+    width: 50%;
+    display: block;
+    margin: 5px 0;
+    color: var(--primary);
+    border: none;
+    outline: none;
+    background-color: var(--main);
+}
+
+.btn:hover {
+    color: var(--primary);
+    background-color: var(--hover);
+}
+
+.btn-inline {
+    display: inline;
+}
+
+
+/* Hero sytles */
+
+.hero {
+    padding: 3% 4%;
+    background-color: var(--header);
+    color: var(--primary);
+}
+
+.hero p {
+    max-width: 75%;
+}
+
+.app-title {
+    font-size: 65px;
+    color: var(--main);
+    padding: 0 10px;
+    display: inline-block;
+    box-shadow: 6px 5px 5px var(--main);
+}
+
+
+/* List styles */
+
+.list-group {
+    padding: 0;
+    list-style: none;
+}
+
+.list-item {
+    margin-bottom: 10px;
+    padding: 1.5%;
+    background-color: var(--secondary);
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.list-item:hover {
+    background-color: var(--main);
+}
+
+
+/* CARDS */
+
+.card {
+    margin: 0 0 20px 0;
+    border: 3px solid var(--main);
+}
+
+.card-header {
+    color: var(--primary);
+    background-color: var(--main);
+    padding: 2.5%;
+    border-radius: calc(.18rem - 1px) calc(3px - 1px) 0 0;
+}
+
+.card-header i {
+    float: right;
+}
+
+.card-body {
+    padding: 2.5%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.day {
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+/* FORMS */
+
+.form-label,
+.form-input,
+.form-textarea {
+    display: block;
+}
+
+.form-label {
+    font-size: 16px;
+    margin: 0 0 0 5px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 3%;
+    margin: 5px 0;
+    font-size: 18px;
+    border: 2px solid var(--light-main);
 }
