@@ -1,3 +1,4 @@
+// Global variables input elements for holding data
 var today = new Date();
 var cityFormEl = document.querySelector("#city-form");
 var cityNameInputEl = document.querySelector("#cityname");
@@ -36,7 +37,7 @@ var formSubmitHandler = function(event) {
 
 }
 
-// Get weather information from OpenWeather
+// Get weather information from OpenWeather using fetch 
 var getWeatherInfo = function(cityname) {
     var apiCityUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + cityname + "&units=imperial&appid=f97301447cbd41068af8623a398ba1fb";
     fetch(
@@ -59,7 +60,7 @@ var getWeatherInfo = function(cityname) {
             var weatherDescription = cityResponse.weather[0].description;
             var weatherIconLink = "<img src='http://openweathermap.org/img/wn/" + weatherIcon + "@2x.png' alt='" + weatherDescription + "' title='" + weatherDescription + "'  />"
 
-            // Empty Current Weather element for new data
+            // Empty Current Weather element array to make space for new data
             currentWeatherEl.textContent = "";
             fiveDayEl.textContent = "";
 
