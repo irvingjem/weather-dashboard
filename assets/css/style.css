@@ -5,7 +5,7 @@
     --hover: rgba(0, 0, 0, 0.8);
     --main: #c9611c;
     --secondary: #c38a64;
-    --header: #c3c3c3;
+    --header: #ffffff;
 }
 
 
@@ -26,6 +26,7 @@ body {
     color: var(--main);
     line-height: 1.5;
     font-size: 16px;
+    background-color: var(--hover);
 }
 
 
@@ -51,6 +52,7 @@ main {
 p {
     font-size: 16px;
     margin: 5px 5px;
+    color: #ffffff
 }
 
 
